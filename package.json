@@ -25,6 +25,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
-    "eslint": "^8.52.0"
+    "eslint": "^8.52.0",
+    "@eslint/js": "^8.52.0",
+    "globals": "^13.23.0"
   }
 }
