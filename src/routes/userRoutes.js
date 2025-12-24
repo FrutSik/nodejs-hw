@@ -1,15 +1,9 @@
 import express from 'express';
 import { updateUserAvatar } from '../controllers/userController.js';
 import { authenticate } from '../middleware/authenticate.js';
-import { upload } from '../middleware/multer.js';
 
 const router = express.Router();
 
-router.patch(
-  '/users/me/avatar',
-  authenticate,
-  upload.single('avatar'),
-  updateUserAvatar,
-);
+router.patch('/users/me/avatar', authenticate, updateUserAvatar);
 
 export default router;
